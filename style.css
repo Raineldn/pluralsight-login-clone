@@ -113,6 +113,44 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0 0.8rem;
 }
 
+/* Showcase */
+
+#showcase {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('img/login-bg.jpg') no-repeat center center / cover;
+	height: 100vh;
+	text-align: center;
+}
+
+#showcase .showcase-text {
+	font-size: 3rem;
+	width: 100%;
+	color: #fff;
+	margin-bottom: 1.5rem;
+}
+
+#showcase .secondary-btn {
+	width: 60%;
+	margin: auto;
+}
+
+/* Footer */
+
+#main-footer {
+	color: #ccc;
+	text-align: center;
+	font-size: 0.8rem;
+	max-width: 80%
+	padding-top: 5rem;
+}
+
+#main-footer a {
+	color: #f96816;
+	text-decoration: underline;
+}
+
 
 /* Button */
 
@@ -164,6 +202,33 @@ h1, h2, h3, h4, h5, h6 {
 
 	#right {
 		flex: 6;
+	}
+}
+
+@media(max-width: 768px) {
+	body {
+		overflow: auto;
+	}
+
+	#right {
+		display: none;
+	}
+
+	#left {
+		justify-content: start;
+		margin-top: 4vh;
+	}
+
+	#signin .logo {
+		margin-bottom: 2vh;
+	}
+
+	#signin .text-input {
+		margin-bottom: 0.7rem;
+	}
+
+	#main-footer {
+		padding-top: 1rem;
 	}
 }
 
